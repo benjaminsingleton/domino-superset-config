@@ -24,7 +24,7 @@ if [ ! -f $SUPERSET_HOME/superset_config.py ]; then
   touch $SUPERSET_HOME/superset_config.py
  
   cat > $SUPERSET_HOME/superset_config.py <<EOF
-DATA_DIR = $DOMINO_WORKING_DIR
+DATA_DIR = ${DOMINO_WORKING_DIR}
 ROW_LIMIT = ${SUP_ROW_LIMIT}
 WEBSERVER_THREADS = 4
 SUPERSET_WEBSERVER_PORT = 8088
